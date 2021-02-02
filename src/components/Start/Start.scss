@@ -1,0 +1,154 @@
+.all-movie{
+  padding-top: 1%;
+}
+.movie {
+  background-color: white;
+  width: 200px !important;
+  height: 435px;
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.btn-main {
+  position: absolute;
+  bottom: 1px;
+  right: 6px;
+  font-size: 18px;
+}
+.btn-info {
+  position: absolute;
+  bottom: 1px;
+  left: 6px;
+  font-size: 18px;
+  border-radius: 4px;
+  background-color: #cccccc;
+  border: none;
+  color: #505050;
+  text-align: center;
+  font-size: 12px;
+  padding: 10px;
+  width: 60px;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+.button-remove {
+  background-color: #e98b3e !important;
+}
+/* Button */
+.button-add {
+  border-radius: 4px;
+  background-color: #2f9e13;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 10px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: auto;
+}
+
+.button-add span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-add span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-add:hover span {
+  padding-right: 25px;
+}
+
+.button-add:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.alert{
+  color: red;
+}
+
+
+/* Movie delen */
+.Movie-part {
+  margin-left: 3%;
+  max-width: 60%;
+
+}
+
+.Cart-part {
+  margin-left: 3%;
+  max-width: 33%;
+
+}
+.clearfix {
+  clear: both;
+  max-width: 100%;
+}
+
+.total-Line{
+  padding-top: 10%;
+}
+
+
+
+
+.search-bar {
+  max-width: 120rem;
+  margin: 0 auto;
+  height: 105px;
+  text-align: center;
+  position: relative;
+  padding: .5rem 2rem 0 2rem;
+  color: #ffffff;
+
+  &__content {
+    width: 50%;
+    height: 5.5rem;
+    font-size: 1rem;
+    display: inline-block;
+    background:rgba(rgb(65, 65, 65), 0.2);
+    border-radius: 4rem;
+    border-style: solid ;
+    border-color: rgb(71, 71, 71);
+    position: relative;
+  }
+
+  &__icon {
+    position: absolute;
+    left: 2rem;
+    top: 1.2rem;
+    color: #ffffff;
+  }
+
+  &__input {
+    font-size: 2.8rem;
+    position: absolute;
+    left: 7rem;
+    top: .7rem;
+    border: none;
+    background-color: transparent;
+    height: 4rem;
+    color: rgb(0, 0, 0);
+  }
+
+  &__input:focus {
+    outline: none;
+  }
+}

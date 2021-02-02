@@ -1,0 +1,60 @@
+.header {
+  width: 100%;
+  height: auto;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3rem 5rem rgba(rgb(65, 65, 65), 0.2);
+
+  &__content {
+    max-width: 120rem;
+    min-width: 12rem;
+    padding: 1rem 0;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+  &__left-logo {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  &__right-logo {
+    margin: auto;
+    height: 5rem;
+  }
+  &__user-logo {
+    margin-top: 2.5rem;
+    margin-left: 4rem;
+    height: 2rem;
+  }
+  &__user-text {
+    padding-top: 2.7rem;
+    margin-left: 1rem;
+    text-align: center;
+    text-decoration: none!important;
+  }
+
+  &__title {
+    margin: auto;
+    padding-right: 15%;
+  }
+
+  @media screen and (max-width: 500px) {
+    &__left-logo {
+      width: 15rem;
+      margin-top: 0.5rem;
+    }
+
+    &__right-logo {
+      width: 15rem;
+      margin-top: 0.5rem;
+    }
+    &__user-logo {
+      width: 15rem;
+      margin-top: 0.5rem;   
+     }
+  }
+}
